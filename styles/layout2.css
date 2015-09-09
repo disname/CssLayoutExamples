@@ -1,0 +1,39 @@
+@import "reset.css";
+@import "common.css";
+
+.big, .small{
+    float: left;
+    width:100%;
+    margin: 20px auto;
+}
+.big {
+    background:#222;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.s-block {
+    min-height: 100px;
+    float:left;
+    width: 32.6%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+}
+.s-block:nth-child(3n+3){
+    margin-right: 0;
+}
+
+@media screen and ( min-width: 400px ) and ( max-width: 800px ) {
+    .s-block {
+        width: 49%;
+    }
+    .s-block:nth-child(odd){
+        margin: 0 1% 0 0;
+    }
+}
+
+@media screen and ( max-width: 400px ) {
+    .s-block {
+        width: 100%;
+    }
+}
