@@ -1,0 +1,29 @@
+@charset "utf-8";
+$background_main: #ccc;
+$background_block: #222;
+$default-transition-duration: 1s;
+$default-transition-timing: ease;
+$default-transition-property: all;
+html, body {
+  background: $background_main;
+}
+
+* {
+  -webkit-transition: $default-transition-property $default-transition-duration $default-transition-timing;
+  -moz-transition: $default-transition-property $default-transition-duration $default-transition-timing;
+  -o-transition: $default-transition-property $default-transition-duration $default-transition-timing;
+  -ms-transition: $default-transition-property $default-transition-duration $default-transition-timing;
+  transition: $default-transition-property $default-transition-duration $default-transition-timing;
+}
+
+.wrap {
+  position: relative;
+  width: 80%;
+  max-width: 960px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.big, .s-block, .logo, .logo:before, .list, .m-top, .m-bottom, .w-image, .w-title, .m-image, .b-list, .ava, .t-block, .block {
+  background: $background_block;
+}

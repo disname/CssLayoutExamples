@@ -1,0 +1,12 @@
+.top {
+  float: left;
+}
+
+.content {
+  float: right;
+  display: block;
+  border: 1px solid;
+  color: green;
+}
+
+/*# sourceMappingURL=layout3.css.map */

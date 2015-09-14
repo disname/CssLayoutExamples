@@ -1,0 +1,25 @@
+html, body {
+  background: #ccc;
+}
+
+* {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.wrap {
+  position: relative;
+  width: 80%;
+  max-width: 960px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.big, .s-block, .logo, .logo:before, .list, .m-top, .m-bottom, .w-image, .w-title, .m-image, .b-list, .ava, .t-block, .block {
+  background: #222;
+}
+
+/*# sourceMappingURL=common.css.map */
