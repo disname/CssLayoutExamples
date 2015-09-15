@@ -1,3 +1,4 @@
+/*mix of phone and tablet(samsung note etc)*/
 html, body {
   background: #ccc;
 }
@@ -18,7 +19,7 @@ html, body {
   overflow: hidden;
 }
 
-.big, .s-block, .logo, .logo:before, .list, .m-top, .m-bottom, .w-image, .w-title, .m-image, .b-list, .ava, .t-block, .block {
+.big, .s-block, .logo, .logo:before, .top_menu_item, .content_row_top, .content_row_bottom, .content_column_image, .b-list, .ava, .t-block, .block {
   background: #222;
 }
 

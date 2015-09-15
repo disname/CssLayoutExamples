@@ -48,6 +48,7 @@ table {
   border-spacing: 0;
 }
 
+/*mix of phone and tablet(samsung note etc)*/
 html, body {
   background: #ccc;
 }
@@ -68,7 +69,7 @@ html, body {
   overflow: hidden;
 }
 
-.big, .s-block, .logo, .logo:before, .list, .m-top, .m-bottom, .w-image, .w-title, .m-image, .b-list, .ava, .t-block, .block {
+.big, .s-block, .logo, .logo:before, .top_menu_item, .content_row_top, .content_row_bottom, .content_column_image, .b-list, .ava, .t-block, .block {
   background: #222;
 }
 
@@ -96,7 +97,7 @@ html, body {
   margin-right: 0;
 }
 
-@media screen and (min-width: 400px) and (max-width: 800px) {
+@media (min-width: 400px) and (max-width: 767px) {
   .s-block {
     width: 49%;
   }
@@ -105,7 +106,7 @@ html, body {
     margin: 0 1% 0 0;
   }
 }
-@media screen and (max-width: 400px) {
+@media (max-width: 399px) {
   .s-block {
     width: 100%;
   }

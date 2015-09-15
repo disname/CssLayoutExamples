@@ -1,12 +1,170 @@
-.top {
-  float: left;
+/*mix of phone and tablet(samsung note etc)*/
+html, body {
+  background: #ccc;
 }
 
-.content {
-  float: right;
+* {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.wrap {
+  position: relative;
+  width: 80%;
+  max-width: 960px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.big, .s-block, .logo, .logo:before, .top_menu_item, .content_row_top, .content_row_bottom, .content_column_image, .b-list, .ava, .t-block, .block {
+  background: #222;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
-  border: 1px solid;
-  color: green;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.top {
+  margin: 0 0 1em 0;
+  width: 100%;
+  padding: 0.3em;
+  overflow: hidden;
+}
+
+.top_menu {
+  float: right;
+  width: 48%;
+}
+.top_menu ul {
+  margin: 0 auto;
+}
+
+.top_menu_item {
+  width: 30%;
+  height: 3em;
+  float: left;
+  margin: 0 1% 0 0;
+}
+
+.top_menu_item:last-child {
+  margin: 0;
+}
+
+.logo {
+  float: left;
+  width: 45%;
+  height: 5em;
+}
+
+.content_row_top, .content_row_bottom {
+  width: 100%;
+  height: 6em;
+  margin-bottom: 1em;
+}
+
+.main_content {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.main_content_column {
+  float: left;
+  width: 24%;
+  margin: 0 0.5em 0 0;
+}
+.main_content_column .content_column_image {
+  width: 12em;
+  height: 12em;
+  margin: 0 auto;
+}
+.main_content_column .content_column_text {
+  padding: 1em 0 0 0;
+  word-wrap: normal;
+  word-break: keep-all;
+  width: 100%;
+}
+
+.main_content_column:last-child {
+  margin: 0;
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+  .main_content_column {
+    width: 45%;
+  }
+
+  .main_content_column:nth-child(2n) {
+    margin: 0;
+  }
+}
+@media (max-width: 399px) {
+  .logo, .top_menu {
+    float: none;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .top_menu {
+    margin: 1% 0 0 0;
+    width: 100%;
+  }
+
+  .main_content_column {
+    float: none;
+    width: 100%;
+    margin-bottom: 1em;
+  }
 }
 
 /*# sourceMappingURL=layout3.css.map */

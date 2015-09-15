@@ -23,7 +23,7 @@
     margin-right: 0;
 }
 
-@media screen and ( min-width: 400px ) and ( max-width: 800px ) {
+@include phablet{
     .s-block {
         width: 49%;
     }
@@ -32,7 +32,7 @@
     }
 }
 
-@media screen and ( max-width: 400px ) {
+@include phone {
     .s-block {
         width: 100%;
     }

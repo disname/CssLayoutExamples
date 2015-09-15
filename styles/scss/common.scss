@@ -4,6 +4,36 @@ $background_block: #222;
 $default-transition-duration: 1s;
 $default-transition-timing: ease;
 $default-transition-property: all;
+
+
+$phone-width:400px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin phone {
+  @media (max-width: #{$phone-width - 1px}) {
+    @content;
+  }
+}
+/*mix of phone and tablet(samsung note etc)*/
+@mixin phablet {
+  @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$phone-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
 html, body {
   background: $background_main;
 }
@@ -24,6 +54,6 @@ html, body {
   overflow: hidden;
 }
 
-.big, .s-block, .logo, .logo:before, .list, .m-top, .m-bottom, .w-image, .w-title, .m-image, .b-list, .ava, .t-block, .block {
+.big, .s-block, .logo, .logo:before, .top_menu_item, .content_row_top, .content_row_bottom, .content_column_image, .b-list, .ava, .t-block, .block {
   background: $background_block;
 }

@@ -31,7 +31,7 @@
 
 
 
-@media screen and (max-width: 800px) and (min-width: 400px)  {
+@include phablet {
 
     .big{
         width: 100%;
@@ -59,7 +59,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@include phone{
 
     .small{
         width:100%;
