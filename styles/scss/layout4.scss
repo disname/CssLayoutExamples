@@ -1,0 +1,35 @@
+@import 'reset';
+@import 'common';
+.fixed-block{
+  position: fixed;
+  box-sizing: border-box;
+  top:50%;
+  left:50%;
+  z-index: 1000;
+  width:20em;
+  height: 10em;
+  padding: 1em;
+  background-color: beige;
+  transform: translate3d(-50%,-50%,0);
+  .fixed-block_content{
+    font-size: 4em;
+    color:black;
+    font-weight: bold;
+  }
+}
+section{
+  position: relative;
+  height: 40em;
+  width: 100%;
+}
+.first-block{
+  background-color: #cccccc;
+}
+
+.second-block{
+  background-color: aquamarine;
+}
+
+.third-block{
+  background-color: red;
+}

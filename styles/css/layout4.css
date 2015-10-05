@@ -1,0 +1,112 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*mix of phone and tablet(samsung note etc)*/
+html, body {
+  background: #ccc;
+}
+
+* {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.wrap {
+  position: relative;
+  width: 80%;
+  max-width: 960px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.big, .s-block, .logo, .logo:before, .top_menu_item, .content_row_top, .content_row_bottom, .content_column_image, .b-list, .ava, .t-block, .block {
+  background: #222;
+}
+
+.fixed-block {
+  position: fixed;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  width: 20em;
+  height: 10em;
+  padding: 1em;
+  background-color: beige;
+  transform: translate3d(-50%, -50%, 0);
+}
+.fixed-block .fixed-block_content {
+  font-size: 4em;
+  color: black;
+  font-weight: bold;
+}
+
+section {
+  position: relative;
+  height: 40em;
+  width: 100%;
+}
+
+.first-block {
+  background-color: #cccccc;
+}
+
+.second-block {
+  background-color: aquamarine;
+}
+
+.third-block {
+  background-color: red;
+}
+
+/*# sourceMappingURL=layout4.css.map */
