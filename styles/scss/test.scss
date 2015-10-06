@@ -1,0 +1,81 @@
+@import "reset";
+@import "common";
+
+$checked:0;
+$simple-width: 100px;
+
+%extension {
+  color: blueviolet;
+}
+
+.test {
+  @extend %extension;
+  float: left;
+  width: 200px;
+  background-color: burlywood;
+}
+
+.test:before {
+  margin-left: 2em;
+  background-color: red;
+  width: 50px;
+  content: 'before';
+  float: left;
+}
+
+.test:after {
+  margin-right: 2em;
+  background-color: red;
+  width: 50px;
+  content: 'after';
+  float: left;
+}
+
+.simple {
+  @extend %extension;
+  background-color: aquamarine;
+  display: block;
+  position: relative;
+  width: $simple-width;
+  height: 100px;
+  margin: 0.5em;
+  float: left;
+  font-size: 1em;
+}
+
+
+.simple:checked
+{
+  transform: rotate(90deg);
+  cursor: hand;
+  content: $checked;
+  div{
+    transform: rotate(-90deg);
+  }
+}
+@function incr(){
+
+}
+.simple:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  transform: rotate(-90deg);
+  left: 20%;
+  top: 20%;
+}
+
+.wrapper {
+  background-color: cornflowerblue;
+  width: $simple-width*3+50px;
+  overflow: hidden;
+  // box-sizing: border-box;
+  .counter{
+    content:$checked;
+  }
+}
+
+.wrapper:after {
+  clear: both;
+  content: '';
+  display: table;
+}
